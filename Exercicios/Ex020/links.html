@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* Seletores personalizados
+            #  =id
+            .  =Class
+            :  =pseudo-class
+            :: =pseudo-element
+            >  =clildren
+
+         */  
+
+        body{
+            font-family:Arial, Helvetica, sans-serif
+        }
+
+        a{
+            color: red;
+            text-decoration:none;
+            font-weight: bold;
+        }
+        /*piseudo class*/
+        a:visited{
+            color: darkblue;
+        }
+
+        a:hover{
+            color:black;
+            text-decoration: underline;
+        }
+        
+        a:active{
+            color:aqua;
+        }
+
+        .especial::before{
+            content:'=>';
+        }
+
+        a::after{
+            content:'<=';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Pesonalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com/obllivioon/" target="_blank">Instagram</a></li>
+        <li><a href="https://www.tiktok.com/@obllivioon" target="_blank" class="especial">Tiktok</a></li>
+        <li><a href="https://br.pinterest.com/" target="_blank">Pinterest</a></li>
+    </ul>
+    
+</body>
+</html>
